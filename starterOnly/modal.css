@@ -184,6 +184,7 @@ main {
 }
 
 .modal-body {
+  position: relative;
   padding: 15px 8%;
   margin: 15px auto;
 }
@@ -208,6 +209,16 @@ input {
   font-size: 20px;
   height: 48px;
 }
+
+.error_first {
+  color: red;
+  font-size: 0.7rem;
+}
+
+.reserve {
+  visibility: visible;
+}
+
 .formData[data-error]::after {
   content: attr(data-error);
   font-size: 0.4em;
@@ -440,6 +451,15 @@ input[data-error]::after {
   font-weight: normal;
   white-space: nowrap;
 }
+.message-validation {
+  position: absolute;
+  font-size: 2.5rem;
+  font-weight: normal;
+  text-align: center;
+  top: 40%;
+  left: 20%;
+  visibility: hidden;
+}
 .hero-text {
   width: 146%;
   font-weight: normal;
@@ -478,6 +498,11 @@ footer {
   padding-right: 2vw;
   margin: 0 20px;
 }
+@media screen and (min-width: 801px) and (max-width: 950px)  {
+  .hero-headline {
+    font-size: 4.5rem;
+  }
+}
 @media screen and (max-width: 800px) {
   .hero-section {
     display: block;
@@ -499,7 +524,7 @@ footer {
     white-space: normal;
   }
   .hero-text {
-    width: unset;
+    width: 90%;
     font-size: 1.5rem;
   }
   .hero-img img {
