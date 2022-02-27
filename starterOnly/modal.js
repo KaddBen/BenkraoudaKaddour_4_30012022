@@ -73,7 +73,6 @@ function setError(element, number) {
 
     case 2:
       inputControl.setAttribute('data-error', 'Une adresse email est requise')
-      inputControl.setAttribute('data-error-visible', 'true')
       break
 
     case 3:
@@ -81,7 +80,6 @@ function setError(element, number) {
         'data-error',
         'Veuillez entrer une adresse email valide',
       )
-      inputControl.setAttribute('data-error-visible', 'true')
       break
 
     case 4:
@@ -89,7 +87,6 @@ function setError(element, number) {
         'data-error',
         'Veuillez completer votre date de naissance',
       )
-      inputControl.setAttribute('data-error-visible', 'true')
       break
 
     case 5:
@@ -97,7 +94,6 @@ function setError(element, number) {
         'data-error',
         'Une valeur numerique est requise pour ce champ',
       )
-      inputControl.setAttribute('data-error-visible', 'true')
       break
 
     case 6:
@@ -105,7 +101,6 @@ function setError(element, number) {
         'data-error',
         'Vous devez selectionner un emplacement',
       )
-      inputControl.setAttribute('data-error-visible', 'true')
       break
 
     case 7:
@@ -113,7 +108,6 @@ function setError(element, number) {
         'data-error',
         "Vous devez accepter les conditions d'utilisation",
       )
-      inputControl.setAttribute('data-error-visible', 'true')
       break
   }
 }
