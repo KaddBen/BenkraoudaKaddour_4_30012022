@@ -191,7 +191,6 @@ function validate() {
   } else {
     setSucess(agreementCheck)
   }
-  console.log(allDataErrorVisible.length)
   confirmation()
 }
 //Display a confirmation message when the form is valid
